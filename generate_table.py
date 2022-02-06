@@ -47,9 +47,6 @@ def create_table(prefix, hash_key, range_key=None):
 def record_env_var(key, value):  
     with open(os.path.join('.chalice', 'config.json')) as f:
         data = json.load(f)
-        # data['stages'].setdefault(stage, {}).setdefault(
-        #     'environment_variables', {}
-        # )[key] = value
         data.setdefault('environment_variables', {})[key] = value
 
     with open(os.path.join('.chalice', 'config.json'), 'w') as f:
