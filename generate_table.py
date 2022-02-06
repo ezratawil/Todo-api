@@ -26,7 +26,7 @@ def create_table(prefix, hash_key, range_key=None):
             'AttributeType': 'S',
         }
     ]
-    if range_key is not None:
+    if range_key:
         key_schema.append({'AttributeName': range_key, 'KeyType': 'RANGE'})
         attribute_definitions.append(
             {'AttributeName': range_key, 'AttributeType': 'S'})
