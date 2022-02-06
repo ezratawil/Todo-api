@@ -1,5 +1,5 @@
 # Todo-api 
-Todo api using AWS lambda function with DynamoDB backend. Developed in Python using Chalice microframework for creating and developing Lambda Function and REST API , and AWS SDK for python (boto3) for configuring AWS resources. Resource Configuration in the file generate_table.py
+Todo api using AWS lambda function with DynamoDB backend. Developed in Python using Chalice microframework for creating and developing Lambda Function and REST API , and AWS SDK for python (boto3) for configuring AWS resources. Resource Configuration in the file generate_table.py, and API logic in the app.py file
 
 References used:                                         
 https://boto3.amazonaws.com/v1/documentation/api/latest/guide/dynamodb.html     
