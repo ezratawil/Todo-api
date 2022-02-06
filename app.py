@@ -45,9 +45,3 @@ def add_new_todo():
         data=body.get('data'),
     )
 
-
-@app.route('/test_db')
-def test_ddb():
-    resource = boto3.resource('dynamodb')
-    table = resource.Table(os.environ['TABLE_NAME'])
-    return table.name
