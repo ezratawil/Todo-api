@@ -24,6 +24,7 @@ Resources deployed:
 
 
 ## Check for records in db
+#### URL: https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/todos
 
 ```
 >>>> http https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/todos
@@ -46,7 +47,8 @@ x-amzn-RequestId: 9aba8079-c28b-4dae-922d-2e473a5aacf9
 ### Returns empty list (we havent added records yet) 
 
 
-## Add first todo item to our table
+## Add first todo item to our table 
+#### URL: https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/add_record
 
 ```
 >>>> echo {"description": "TODO #1"} | http POST https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/add_record
@@ -79,7 +81,8 @@ HTTP/1.1 200 OK
 23530c85-1490-4b87-8dd8-432048eecfd4
 
 ```
-## List all Todos
+## List all Todos          
+#### URL: https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/todos
 ```
 >>>> http https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/todos
 HTTP/1.1 200 OK
