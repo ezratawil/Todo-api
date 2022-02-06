@@ -26,7 +26,7 @@ Resources deployed:
 ## Check for records in db
 
 ```
->>> http https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/todos
+>>>> http https://4pt8htt4vf.execute-api.us-east-2.amazonaws.com/api/todos
 HTTP/1.1 200 OK
 Connection: keep-alive
 Content-Length: 2
